@@ -1,4 +1,6 @@
 RomanNumeral
 ============
+A basic Elixir kata with tests.
 
-** TODO: Add description **
+## Run the Tests
+`mix test`
