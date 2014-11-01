@@ -1,7 +1,11 @@
 defmodule RomanNumeralTest do
   use ExUnit.Case
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "convert 0" do
+    assert RomanNumeral.convert(0) == ""
+  end
+
+  test "convert 1" do
+    assert RomanNumeral.convert(1) == "I"
   end
 end
