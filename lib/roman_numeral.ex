@@ -3,7 +3,7 @@ defmodule RomanNumeral do
     ""
   end
 
-  def convert(number) when number == 2 do
+  def convert(2) do
     "II"
   end
 
