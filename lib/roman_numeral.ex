@@ -6,15 +6,15 @@ defmodule RomanNumeral do
     convert(number, @numerals)
   end
 
-  def convert(number, _) when number < 1 do
+  defp convert(number, _) when number < 1 do
     ""
   end
 
-  def convert(number, [{arabic, roman} | tail]) when number >= arabic do
+  defp convert(number, [{arabic, roman} | tail]) when number >= arabic do
     roman <> convert(number - arabic, [{arabic, roman} | tail])
   end
 
-  def convert(number, [_ | tail]) do
+  defp convert(number, [_ | tail]) do
     convert(number, tail)
   end
 end
