@@ -4,6 +4,6 @@ defmodule RomanNumeral do
   end
 
   def convert(number) do
-    String.duplicate("I", number)
+    "I" <> convert(number - 1)
   end
 end
