@@ -3,11 +3,7 @@ defmodule RomanNumeral do
     ""
   end
 
-  def convert(2) do
-    "II"
-  end
-
   def convert(number) do
-    "I"
+    String.duplicate("I", number)
   end
 end
